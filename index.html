@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-nes.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,8 +21,8 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav-menu">
-          <a class="logo" href="./index.html">
-            web<span class="logo-header-studio">Studio</span></a
+          <a class="logo header-logo" href="./index.html">
+            web<span class="logo-part">Studio</span></a
           >
           <ul class="nav-list">
             <li class="nav-list-item">
@@ -36,20 +36,36 @@
             </li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-list">
-            <li>
-              <a class="address-head" href="tel:+110001111111"
+            <li class="address-item">
+              <a class="address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
-            <li>
-              <a class="address-head" href="mailto:info@devstudio.com"
+            <li class="address-item">
+              <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#nav-icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
       </div>
     </header>
     <main>
@@ -469,7 +485,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-main">
+    <footer class="hidden">
       <div class="container footer-container">
         <div class="footer-info">
           <a class="logo footer-logo" href="./index.html">
@@ -547,7 +563,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="hidden">
       <div class="modal-display">
         <button type="button" class="modal-button">
           <svg class="modal-button-svg" width="8" height="8">
@@ -633,36 +649,6 @@
         </form>
       </div>
     </div>
-    <div class="nav-modal">
-      <div class="nav-modal-display">
-        <nav class="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-list-link current" href="./index.html">Studio</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="">Portfolio</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address-list">
-            <li>
-              <a class="address-head" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a class="address-head" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
