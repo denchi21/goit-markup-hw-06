@@ -40,13 +40,13 @@
         <address class="address">
           <ul class="address-list">
             <li class="address-item">
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
             <li class="address-item">
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
@@ -69,7 +69,9 @@
           <nav class="mobile-menu-nav">
             <ul class="menu-nav-list">
               <li class="menu-list-item">
-                <a class="menu-list-link" href="./index.html">Studio</a>
+                <a class="menu-list-link mobile-current" href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="menu-list-item">
                 <a class="menu-list-link" href="">Portfolio</a>
@@ -82,14 +84,16 @@
           <address class="menu-address">
             <ul class="menu-address-list">
               <li class="menu-address-item">
-                <a class="menu-address-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
+                <a
+                  class="menu-address-link mobile-current"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11
+                </a>
               </li>
               <li class="menu-address-item">
-                <a class="menu-address-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a class="menu-address-link" href=" mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
               </li>
             </ul>
           </address>
@@ -711,9 +715,11 @@
     <footer class="footer-main">
       <div class="container footer-container">
         <div class="footer-info">
-          <a class="logo footer-logo" href="./index.html">
-            web<span class="logo-footer-studio">Studio</span></a
-          >
+          <div class="footer-logo-text">
+            <a class="logo footer-logo" href="./index.html">
+              web<span class="logo-footer-studio">Studio</span></a
+            >
+          </div>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -862,10 +868,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              <div class="privacy-text">
+              <span class="privacy-text">
                 I accept the terms and conditions of the
                 <a class="privacy" href="">Privacy Policy</a>
-              </div>
+              </span>
             </label>
           </div>
           <button type="submit" class="form-button">SEND</button>
